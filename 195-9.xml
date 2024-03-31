@@ -4,7 +4,25 @@
     </view>
 
     <view name="gamelist">
-       
+        <text name="player">
+            <fontSize>0.0275</fontSize>
+        </text>
+        <text name="playercount">
+            <fontSize>0.04</fontSize>
+        </text>
+        <text name="genre">
+            <fontSize>0.0275</fontSize>
+        </text>
+        <text name="genretype">
+            <fontSize>0.0225</fontSize>
+        </text>
+        
+        <text name="release">
+            <fontSize>0.0275</fontSize>
+        </text>
+        <datetime name="year">
+            <fontSize>0.04</fontSize>
+        </datetime>
     </view>
     
     <variant name="grid">
@@ -19,36 +37,36 @@
                 <fontSize>${gamesyssize1610}</fontSize>
             </text>
             <text name="player">
-                <pos>0.5525 0.327</pos>
+                <pos>0.5525 0.3325</pos>
                 <size>0.064 0.0225</size>
                 <origin>0.5 0</origin>
                
             </text>
             <text name="playercount">
-                <pos>0.5525 0.35</pos>
-                <size>0.056 0.085</size>
+                <pos>0.5525 0.36</pos>
+                <size>0.056 0.11</size>
                 <origin>0.5 0</origin>
                
             </text>
             <text name="genre">
-                <pos>0.61755 0.327</pos>
+                <pos>0.61745 0.3325</pos>
                 <size>0.064 0.0225</size>
                 <origin>0.5 0</origin>
             </text>
             <text name="genretype">
-                <pos>0.6175 0.35</pos>
-                <size>0.054 0.085</size>
+                <pos>0.6175 0.36</pos>
+                <size>0.054 0.11</size>
                 <origin>0.5 0</origin>
                 <fontSize>0.015</fontSize>
             </text>
             <text name="release">
-                <pos>0.6825 0.327</pos>
+                <pos>0.6835 0.3325</pos>
                 <size>0.064 0.0225</size>
                 <origin>0.5 0</origin>
             </text>
             <datetime name="year">
-                <pos>0.6825 0.35</pos>
-                <size>0.056 0.085</size>
+                <pos>0.6825 0.36</pos>
+                <size>0.056 0.11</size>
                 <origin>0.5 0</origin>
             </datetime>
         </view>
@@ -59,29 +77,28 @@
                     <fontSize>${gamenamesize1610}</fontSize>
                 </text>
                 <text name="player">
-                    <pos>0.06725 0.2275</pos>
+                    <pos>0.06725 0.2325</pos>
                     <size>0.064 0.0225</size>
                 </text>
                 <text name="playercount">
-                    <pos>0.06725 0.25</pos>
-                    <size>0.056 0.085</size>
+                    <pos>0.06725 0.2625</pos>
+                    <size>0.056 0.11</size>
                 </text>
                 <text name="genre">
-                    <pos>0.13275 0.2275</pos>
+                    <pos>0.1327 0.2325</pos>
                     
                 </text>
                 <text name="genretype">
-                    <pos>0.13275 0.25</pos>
-                    <size>0.054 0.085</size>
-                    <fontSize>0.015</fontSize>
+                    <pos>0.13275 0.2625</pos>
+                    <size>0.052 0.11</size>
                 </text>
                 
                 <text name="release">
-                    <pos>0.19825 0.2275</pos>
+                    <pos>0.19875 0.2325</pos>
                 </text>
                 <datetime name="year">
-                    <pos>0.19825 0.25</pos>
-                    <size>0.056 0.085</size>
+                    <pos>0.19825 0.2625</pos>
+                    <size>0.056 0.11</size>
                 </datetime>
                
                 </view>
@@ -93,36 +110,35 @@
                     </text>
                     
                     <text name="player">
-                        <pos>0.5525 0.817</pos>
+                        <pos>0.551 0.8225</pos>
                         <size>0.064 0.0225</size>
                         <origin>0.5 0</origin>
                        
                     </text>
                     <text name="playercount">
-                        <pos>0.5525 0.8375</pos>
-                        <size>0.056 0.085</size>
+                        <pos>0.5525 0.85</pos>
+                        <size>0.056 0.11</size>
                         <origin>0.5 0</origin>
                        
                     </text>
                     <text name="genre">
-                        <pos>0.61755 0.817</pos>
+                        <pos>0.61655 0.8225</pos>
                         <size>0.064 0.0225</size>
                         <origin>0.5 0</origin>
                     </text>
                     <text name="genretype">
-                        <pos>0.6175 0.8375</pos>
-                        <size>0.054 0.085</size>
+                        <pos>0.6175 0.85</pos>
+                        <size>0.052 0.11</size>
                         <origin>0.5 0</origin>
-                        <fontSize>0.015</fontSize>
                     </text>
                     <text name="release">
-                        <pos>0.6825 0.817</pos>
+                        <pos>0.684 0.8225</pos>
                         <size>0.064 0.0225</size>
                         <origin>0.5 0</origin>
                     </text>
                     <datetime name="year">
-                        <pos>0.6825 0.8375</pos>
-                        <size>0.056 0.085</size>
+                        <pos>0.6825 0.85</pos>
+                        <size>0.056 0.11</size>
                         <origin>0.5 0</origin>
                     </datetime>
                     </view>
