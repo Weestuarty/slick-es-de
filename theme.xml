@@ -2,6 +2,7 @@
     <include>./system/metadata/_default.xml</include>
     <include>./system/custom/metadata/${system.theme}.xml</include>
     <include>./system/metadata/${system.theme}.xml</include>
+    <include>./font.xml</include>
     
     <aspectRatio name="4:3">
         <include>./4-3.xml</include>
@@ -9,14 +10,7 @@
 
 
     <variables>
-        <mainFont>./assets/bebas.otf</mainFont>
-        <secondaryFont>./assets/acre.otf</secondaryFont>
-        <badgeFont>./assets/newstar.otf</badgeFont>
-        <sysnamesize>0.1</sysnamesize>
-        <sysdescsize>0.0325</sysdescsize>
-        <syshelpsize>0.03</syshelpsize>
-        <gamesyssize>0.05</gamesyssize>
-        <gamenamesize>0.085</gamenamesize>
+       
     </variables>
 
     <variant name="all">
@@ -88,7 +82,7 @@
         <text name="syscount">
             <pos>0.035 0.325</pos>
             <origin>0 0</origin>
-            <size>0.275 0.05</size>
+            <size>0.4 0.05</size>
             <systemdata>gamecount</systemdata>
             <fontPath>${secondaryFont}</fontPath>
             <fontSize>${sysdescsize}</fontSize>

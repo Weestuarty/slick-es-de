@@ -1,0 +1,37 @@
+<theme>
+
+    <variables>
+        <mainFont>./assets/bebas.otf</mainFont>
+        <secondaryFont>./assets/acre.otf</secondaryFont>
+        <badgeFont>./assets/newstar.otf</badgeFont>
+        
+	</variables>
+
+
+        <fontSize name="medium">
+            <variables>
+                <sysnamesize>0.1</sysnamesize>
+                <sysdescsize>0.0325</sysdescsize>
+                <syshelpsize>0.03</syshelpsize>
+                <gamesyssize>0.05</gamesyssize>
+                <gamenamesize>0.085</gamenamesize>
+                <gamenamesize43>0.07</gamenamesize43>
+                <gamesyssize43>0.035</gamesyssize43>
+            </variables>
+        </fontSize>
+        <fontSize name="large">
+            <variables>
+                <sysnamesize>0.1</sysnamesize>
+                <sysdescsize>0.055</sysdescsize>
+                <syshelpsize>0.04</syshelpsize>
+                <gamesyssize>0.05</gamesyssize>
+                <gamenamesize>0.085</gamenamesize>
+                <gamenamesize43>0.07</gamenamesize43>
+                <gamesyssize43>0.035</gamesyssize43>
+            </variables>
+        </fontSize>
+
+       
+   
+
+</theme>
