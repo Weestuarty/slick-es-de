@@ -18,10 +18,12 @@ The following options are included:
 
 ![carousel](game0.webp)
 
-2 aspect ratios:
+4 aspect ratios:
 
 - 16:9
 - 4:3
+- 16:10
+- 19.5:9
 
 
 
