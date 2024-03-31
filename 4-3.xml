@@ -1,0 +1,194 @@
+<theme>
+    <variables>
+        <gamenamesize43>0.07</gamenamesize43>
+        <gamesyssize43>0.035</gamesyssize43>
+    </variables>
+
+    <view name="system">
+        <carousel name="system_car">
+            <pos>0.1 0.15</pos>
+        </carousel>
+        <text name="sysname">
+            <pos>0.025 0.225</pos>
+            <origin>0 0.5</origin>
+            <size>0.6 0.2</size>
+        </text>
+        <text name="sysinfo">
+            <pos>0.025 0.125</pos>
+        </text>
+        <text name="sysdesc">
+            <pos>0.025 0.385</pos>
+            <size>0.425 0.53</size>
+        </text>
+        <text name="syscount">
+            <pos>0.025 0.325</pos>
+            <size>0.35 0.05</size>
+        </text>
+        <image name="background2">
+            <pos>0.2 0</pos>
+            <size>1 1</size>
+            <path>./assets/backgrounds/${system.theme}.png</path>
+            <zIndex>1</zIndex>
+        </image>
+        <image name="background3">
+            <pos>0.55 -0.2</pos>
+            <size>0.45 1.5</size>
+            <rotation>20</rotation>
+            <path>./space.webp</path>
+            <color>000000</color>
+            <colorEnd>00000000</colorEnd>
+            <zIndex>2</zIndex>
+        </image>
+        <image name="background4">
+            <pos>0. -0.2</pos>
+            <rotation>20</rotation>
+            <size>0.525 1.5</size>
+            <path>./space.webp</path>
+            <color>000000</color>
+            <zIndex>2</zIndex>
+        </image>
+    </view>
+
+    <view name="gamelist">
+        <text name="player">
+            <fontSize>0.0175</fontSize>
+        </text>
+        <text name="playercount">
+            <fontSize>0.03</fontSize>
+        </text>
+        <text name="genre">
+            <fontSize>0.0175</fontSize>
+        </text>
+        <text name="genretype">
+            <fontSize>0.015</fontSize>
+        </text>
+        
+        <text name="release">
+            <fontSize>0.0175</fontSize>
+        </text>
+        <datetime name="year">
+            <fontSize>0.03</fontSize>
+        </datetime>
+    </view>
+
+    <variant name="grid">
+    <view name="gamelist">
+        <text name="gamename">          
+            <fontSize>${gamenamesize43}</fontSize>
+            <pos>0.52 0.13</pos> 
+        </text>
+        <text name="sysname">
+            <pos>0.52 0.075</pos>
+            <size>0.46 0.05</size>
+            <fontSize>${gamesyssize43}</fontSize>
+        </text>
+        <text name="player">
+            <pos>0.5525 0.326</pos>
+            <size>0.064 0.0225</size>
+            <origin>0.5 0</origin>
+           
+        </text>
+        <text name="playercount">
+            <pos>0.5525 0.35</pos>
+            <size>0.056 0.07</size>
+            <origin>0.5 0</origin>
+           
+        </text>
+        <text name="genre">
+            <pos>0.61755 0.326</pos>
+            <size>0.064 0.0225</size>
+            <origin>0.5 0</origin>
+        </text>
+        <text name="genretype">
+            <pos>0.6175 0.35</pos>
+            <size>0.056 0.07</size>
+            <origin>0.5 0</origin>
+        </text>
+        <text name="release">
+            <pos>0.6825 0.326</pos>
+            <size>0.064 0.0225</size>
+            <origin>0.5 0</origin>
+        </text>
+        <datetime name="year">
+            <pos>0.6825 0.35</pos>
+            <size>0.056 0.07</size>
+            <origin>0.5 0</origin>
+        </datetime>
+    </view>
+    </variant>
+
+    <variant name="car">
+        <view name="gamelist">
+            <text name="sysname">
+                <fontSize>${gamenamesize43}</fontSize>
+            </text>
+            <text name="player">
+                <pos>0.06725 0.225</pos>
+                <size>0.064 0.0225</size>
+            </text>
+            <text name="playercount">
+                <pos>0.06725 0.25</pos>
+                <size>0.056 0.07</size>
+            </text>
+            <text name="genre">
+                <pos>0.13275 0.225</pos>
+                
+            </text>
+            <text name="genretype">
+                <pos>0.13275 0.25</pos>
+                <size>0.056 0.07</size>
+            </text>
+            
+            <text name="release">
+                <pos>0.19825 0.225</pos>
+            </text>
+            <datetime name="year">
+                <pos>0.19825 0.25</pos>
+                <size>0.056 0.07</size>
+            </datetime>
+           
+            </view>
+            </variant>
+
+    <variant name="text">
+        <view name="gamelist">
+        <text name="sysname">          
+            <fontSize>${gamenamesize43}</fontSize>
+        </text>
+        
+        <text name="player">
+            <pos>0.5525 0.816</pos>
+            <size>0.064 0.0225</size>
+            <origin>0.5 0</origin>
+           
+        </text>
+        <text name="playercount">
+            <pos>0.5525 0.8375</pos>
+            <size>0.056 0.07</size>
+            <origin>0.5 0</origin>
+           
+        </text>
+        <text name="genre">
+            <pos>0.61755 0.816</pos>
+            <size>0.064 0.0225</size>
+            <origin>0.5 0</origin>
+        </text>
+        <text name="genretype">
+            <pos>0.6175 0.8375</pos>
+            <size>0.056 0.07</size>
+            <origin>0.5 0</origin>
+        </text>
+        <text name="release">
+            <pos>0.6825 0.816</pos>
+            <size>0.064 0.0225</size>
+            <origin>0.5 0</origin>
+        </text>
+        <datetime name="year">
+            <pos>0.6825 0.8375</pos>
+            <size>0.056 0.07</size>
+            <origin>0.5 0</origin>
+        </datetime>
+        </view>
+    </variant>
+        
+</theme>

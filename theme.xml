@@ -1,0 +1,693 @@
+<theme>
+    <include>./system/metadata/_default.xml</include>
+    <include>./system/custom/metadata/${system.theme}.xml</include>
+    <include>./system/metadata/${system.theme}.xml</include>
+    
+    <aspectRatio name="4:3">
+        <include>./4-3.xml</include>
+    </aspectRatio>
+
+
+    <variables>
+        <mainFont>./assets/bebas.otf</mainFont>
+        <secondaryFont>./assets/acre.otf</secondaryFont>
+        <badgeFont>./assets/newstar.otf</badgeFont>
+        <sysnamesize>0.1</sysnamesize>
+        <sysdescsize>0.0325</sysdescsize>
+        <syshelpsize>0.03</syshelpsize>
+        <gamesyssize>0.05</gamesyssize>
+        <gamenamesize>0.085</gamenamesize>
+    </variables>
+
+    <variant name="all">
+    <view name="system, gamelist">
+        <image name="background">
+            <pos>0 0</pos>
+            <size>1 1</size>
+            <path>./space.webp</path>
+            <color>000000</color>
+            <zIndex>0</zIndex>
+        </image>
+        <helpsystem name="help">
+            <pos>0.025 0.975</pos>
+            <origin>0 0.5</origin>
+            <fontPath>${mainFont}</fontPath>
+            <fontSize>${syshelpsize}</fontSize>
+            <textColor>787878</textColor>
+            <iconColor>878787</iconColor>
+        </helpsystem>
+    </view>
+    <view name="system">
+        <carousel name="system_car">
+            <pos>0 0.15</pos>
+            <origin>0 0.5</origin>
+            <size>0.4 0.25</size>
+            <maxItemCount>1</maxItemCount>
+            <color>000000</color>
+            <text>${system.fullName}</text>
+            <textColor>FFFFFF</textColor>
+            <zIndex>0</zIndex>
+        </carousel>
+        <text name="sysname">
+            <pos>0.035 0.225</pos>
+            <origin>0 0.5</origin>
+            <size>0.45 0.2</size>
+            <text>${systemName}</text>
+            <fontPath>${mainFont}</fontPath>
+            <fontSize>${sysnamesize}</fontSize>
+            <lineSpacing>0.9</lineSpacing>
+            <verticalAlignment>center</verticalAlignment>
+            <horizontalAlignment>left</horizontalAlignment>
+            <color>FFFFFF</color>
+        </text>
+        <text name="sysinfo">
+            <pos>0.035 0.125</pos>
+            <origin>0 1</origin>
+            <size>0.45 0.05</size>
+            <text>${systemReleaseYear} • ${systemManufacturer} • ${systemHardwareType}</text>
+            <fontPath>${mainFont}</fontPath>
+            <fontSize>${sysdescsize}</fontSize>
+            <lineSpacing>0.9</lineSpacing>
+            <verticalAlignment>center</verticalAlignment>
+            <horizontalAlignment>left</horizontalAlignment>
+            <color>787878</color>
+        </text>
+        <text name="sysdesc">
+            <pos>0.035 0.385</pos>
+            <origin>0 0</origin>
+            <size>0.325 0.53</size>
+            <text>${systemDescription}</text>
+            <fontPath>${secondaryFont}</fontPath>
+            <fontSize>${sysdescsize}</fontSize>
+            <lineSpacing>1</lineSpacing>
+            <verticalAlignment>center</verticalAlignment>
+            <horizontalAlignment>left</horizontalAlignment>
+            <color>787878</color>
+            <container>true</container>
+        </text>
+        <text name="syscount">
+            <pos>0.035 0.325</pos>
+            <origin>0 0</origin>
+            <size>0.275 0.05</size>
+            <systemdata>gamecount</systemdata>
+            <fontPath>${secondaryFont}</fontPath>
+            <fontSize>${sysdescsize}</fontSize>
+            <lineSpacing>1</lineSpacing>
+            <letterCase>uppercase</letterCase>
+            <verticalAlignment>center</verticalAlignment>
+            <horizontalAlignment>left</horizontalAlignment>
+            <color>FF0000</color>
+            <container>true</container>
+        </text>
+        <image name="background2">
+            <pos>0.2 0</pos>
+            <size>1 1</size>
+            <path>./assets/backgrounds/${system.theme}.png</path>
+            <zIndex>1</zIndex>
+        </image>
+        <image name="background3">
+            <pos>0.45 -0.2</pos>
+            <size>0.45 1.5</size>
+            <rotation>20</rotation>
+            <path>./space.webp</path>
+            <color>000000</color>
+            <colorEnd>00000000</colorEnd>
+            <zIndex>2</zIndex>
+        </image>
+        <image name="background4">
+            <pos>-0.1 -0.2</pos>
+            <rotation>20</rotation>
+            <size>0.525 1.5</size>
+            <path>./space.webp</path>
+            <color>000000</color>
+            <zIndex>2</zIndex>
+        </image>
+    </view>
+    </variant>
+
+    <variant name="grid">
+        
+    <include>./system/coversize/${systemCoverSize}.xml</include>
+    <view name="gamelist">
+        <grid name="grid">
+            <origin>0 0</origin>
+            <pos>0 0.001</pos>
+            <size>0.5 0.95</size>
+            <itemSpacing>0.0 0.0</itemSpacing>
+            <imageType>cover</imageType>
+            <imageRelativeScale>1</imageRelativeScale>
+            <itemScale>1.2</itemScale>
+            <systemNameSuffix>false</systemNameSuffix>
+            <unfocusedItemOpacity>1</unfocusedItemOpacity>
+            <selectorLayer>top</selectorLayer>
+            <selectorImage>./system/coversize/${systemCoverSize}.svg</selectorImage>
+            <selectorColor>FF0000</selectorColor>
+            <selectorRelativeScale>1.</selectorRelativeScale>
+            <text>${systemName}</text>
+            <textColor>FFFFFF</textColor>
+            <scaleInwards>true</scaleInwards>
+            <imageFit>cover</imageFit>
+            <fractionalRows>true</fractionalRows>
+            <textSelectedColor>FFFFFF</textSelectedColor>
+            <textRelativeScale>0.925</textRelativeScale>
+            <fontSize>0.018</fontSize>
+            <letterCase>uppercase</letterCase>
+            <lineSpacing>0.8</lineSpacing>
+            <zIndex>29</zIndex>
+        </grid>
+        <text name="sysname">
+            <pos>0.52 0.075</pos>
+            <size>0.46 0.05</size>
+            <text>${systemName}</text>
+            <fontPath>${secondaryFont}</fontPath>
+            <fontSize>${gamesyssize}</fontSize>
+            <color>787878</color>
+        </text>
+        <text name="gamename">
+            <pos>0.52 0.14</pos>
+            <size>0.46 0.2</size>
+            <metadata>name</metadata>
+            <verticalAlignment>top</verticalAlignment>
+            <fontPath>${mainFont}</fontPath>
+            <fontSize>${gamenamesize}</fontSize>
+            <lineSpacing>0.9</lineSpacing>
+            <systemNameSuffix>false</systemNameSuffix>
+            <color>FFFFFF</color>
+        </text>
+        <video name="md_video">
+            <pos>0.75 1</pos>
+            <cropSize>0.5 0.5</cropSize>
+            <origin>0.5 1</origin>
+            <imageType>titlescreen, screenshot</imageType>
+            <interpolation>nearest</interpolation>
+            <pillarboxes>false</pillarboxes>
+            <pillarboxThreshold>0.85 0.90</pillarboxThreshold>
+            <delay>1.7</delay>
+            <scrollFadeIn>true</scrollFadeIn>
+            <zIndex>29</zIndex>
+        </video>
+        <image name="videoframel">
+            <pos>0.5 0.5</pos>
+            <size>0.25 0.5</size>
+            <path>./space.webp</path>
+            <color>000000</color>
+            <colorEnd>00000000</colorEnd>
+            <interpolation>linear</interpolation>
+            <zIndex>30</zIndex>
+        </image>
+        <image name="videoframet">
+            <pos>0.5 0.5</pos>
+            <size>0.5 0.25</size>
+            <path>./space.webp</path>
+            <color>000000</color>
+            <colorEnd>00000000</colorEnd>
+            <interpolation>linear</interpolation>
+            <gradientType>vertical</gradientType>
+            <zIndex>30</zIndex>
+        </image>
+        <image name="yearbadge">
+            <pos>0.715 0.325</pos>
+            <origin>1 0</origin>
+            <maxSize>0.0645 0.18</maxSize>
+            <path>./assets/badges/plain.svg</path>
+            <color>787878DD</color>
+            <zIndex>30</zIndex>
+        </image>
+        <image name="ratebadge">
+            <pos>0.6495 0.325</pos>
+            <origin>1 0</origin>
+            <maxSize>0.0645 0.18</maxSize>
+            <path>./assets/badges/plain.svg</path>
+            <color>787878DD</color>
+            <zIndex>30</zIndex>
+        </image>
+        <image name="playerbadge">
+            <pos>0.585 0.325</pos>
+            <origin>1 0</origin>
+            <maxSize>0.0645 0.18</maxSize>
+            <path>./assets/badges/plain.svg</path>
+            <color>787878DD</color>
+            <zIndex>30</zIndex>
+        </image>
+        <badges name="all">
+            <pos>0.714 0.325</pos>
+            <size>0.325 .18</size>
+            <direction>row</direction>
+            <lines>1</lines>
+            <itemsPerLine>5</itemsPerLine>
+            <itemMargin>0.001 0.001</itemMargin>
+            <slots>completed, favorite,controller,manual</slots>
+            <controllerPos>0.5 0.575</controllerPos>
+            <controllerSize>0.85</controllerSize>
+            <folderLinkSize>0.85 0.9</folderLinkSize>
+            <folderLinkPos>0.47 0.48</folderLinkPos>
+            <folderLinkIconColor>00000055</folderLinkIconColor>
+            <badgeIconColor>787878DD</badgeIconColor>
+            <horizontalAlignment>left</horizontalAlignment>
+            <customBadgeIcon badge="manual">./assets/badges/manual.svg</customBadgeIcon>
+            <customBadgeIcon badge="kidgame">./assets/badges/kid.svg</customBadgeIcon>
+            <customBadgeIcon badge="collection">./assets/badges/collection.svg</customBadgeIcon>
+            <customBadgeIcon badge="altemulator">./assets/badges/alt.svg</customBadgeIcon>
+            <customBadgeIcon badge="favorite">./assets/badges/fave.svg</customBadgeIcon>
+            <customBadgeIcon badge="completed">./assets/badges/complete.svg</customBadgeIcon>
+            <customBadgeIcon badge="controller">./assets/badges/control.svg</customBadgeIcon>
+        </badges>
+        <text name="player">
+            <text>PLAYERS</text>
+            <pos>0.5525 0.33</pos>
+            <size>0.064 0.0225</size>
+            <origin>0.5 0</origin>
+            <fontPath>${badgeFont}</fontPath>
+            <fontSize>0.0225</fontSize>
+            <color>000000</color>
+            <horizontalAlignment>center</horizontalAlignment>
+        </text>
+        <text name="playercount">
+            <metadata>players</metadata>
+            <defaultValue>1</defaultValue>
+            <pos>0.5525 0.355</pos>
+            <size>0.056 0.09</size>
+            <origin>0.5 0</origin>
+            <fontPath>${badgeFont}</fontPath>
+            <fontSize>0.04</fontSize>
+            <color>787878DD</color>
+            <horizontalAlignment>center</horizontalAlignment>
+        </text>
+        <text name="genre">
+            <text>GENRE</text>
+            <pos>0.61755 0.33</pos>
+            <size>0.064 0.0225</size>
+            <origin>0.5 0</origin>
+            <fontPath>${badgeFont}</fontPath>
+            <fontSize>0.0225</fontSize>
+            <color>000000</color>
+            <horizontalAlignment>center</horizontalAlignment>
+        </text>
+        <text name="genretype">
+            <metadata>genre</metadata>
+            <pos>0.6175 0.355</pos>
+            <size>0.056 0.09</size>
+            <origin>0.5 0</origin>
+            <fontPath>${badgeFont}</fontPath>
+            <fontSize>0.02</fontSize>
+            <color>787878DD</color>
+            <horizontalAlignment>center</horizontalAlignment>
+        </text>
+        
+        <text name="release">
+            <text>RELEASED</text>
+            <pos>0.6825 0.33</pos>
+            <size>0.064 0.0225</size>
+            <origin>0.5 0</origin>
+            <fontPath>${badgeFont}</fontPath>
+            <fontSize>0.0225</fontSize>
+            <color>000000</color>
+            <horizontalAlignment>center</horizontalAlignment>
+        </text>
+        <datetime name="year">
+            <metadata>releasedate</metadata>
+            <format>%Y</format>
+            <pos>0.6825 0.355</pos>
+            <size>0.056 0.09</size>
+            <origin>0.5 0</origin>
+            <fontPath>${badgeFont}</fontPath>
+            <fontSize>0.04</fontSize>
+            <color>787878DD</color>
+            <horizontalAlignment>center</horizontalAlignment>
+        </datetime>
+    </view>
+    </variant>
+    
+    <variant name="car">
+        <view name="gamelist">
+        <carousel name="system_car">
+            <pos>0 0.875</pos>
+            <origin>0 0.5</origin>
+            <size>1 0.15</size>
+            <horizontalOffset>-0.325</horizontalOffset>
+            <selectedItemMargins>0.2 0.1</selectedItemMargins>
+            <itemSize>0.1 0.125</itemSize>
+            <itemScale>1.35</itemScale>
+            <imageType>marquee</imageType>
+            <maxItemCount>6</maxItemCount>
+            <color>00000000</color>
+            <colorEnd>000000</colorEnd>
+            <gradientType>vertical</gradientType>
+            <unfocusedItemOpacity>0.2</unfocusedItemOpacity>
+            <text>${system.fullName}</text>
+            <textColor>FFFFFF</textColor>
+            <zIndex>30</zIndex>
+        </carousel>
+        <text name="sysname">
+            <pos>0.035 0.125</pos>
+            <origin>0 0.5</origin>
+            <size>0.475 0.2</size>
+            <metadata>name</metadata>
+            <fontPath>${mainFont}</fontPath>
+            <fontSize>${gamenamesize}</fontSize>
+            <lineSpacing>0.9</lineSpacing>
+            <systemNameSuffix>false</systemNameSuffix>
+            <verticalAlignment>center</verticalAlignment>
+            <horizontalAlignment>left</horizontalAlignment>
+            <color>FFFFFF</color>
+        </text>
+       
+        <text name="sysdesc">
+            <pos>0.035 0.385</pos>
+            <origin>0 0</origin>
+            <size>0.325 0.43</size>
+            <metadata>description</metadata>
+            <fontPath>${secondaryFont}</fontPath>
+            <fontSize>${sysdescsize}</fontSize>
+            <lineSpacing>1</lineSpacing>
+            <verticalAlignment>center</verticalAlignment>
+            <horizontalAlignment>left</horizontalAlignment>
+            <color>787878</color>
+            <container>true</container>
+        </text>
+        
+        <video name="background2">
+            <pos>0.35 0</pos>
+            <cropSize>0.65 .8</cropSize>
+            <imageType>screenshot</imageType>
+            <zIndex>1</zIndex>
+        </video>
+        <image name="background3">
+            <pos>0.45 -0.2</pos>
+            <size>0.45 1.5</size>
+            <rotation>20</rotation>
+            <path>./space.webp</path>
+            <color>000000</color>
+            <colorEnd>00000000</colorEnd>
+            <zIndex>2</zIndex>
+        </image>
+        <image name="background4">
+            <pos>-0.1 -0.2</pos>
+            <rotation>20</rotation>
+            <size>0.525 1.5</size>
+            <path>./space.webp</path>
+            <color>000000</color>
+            <zIndex>2</zIndex>
+        </image>
+        <image name="background5">
+            <pos>0 0.7</pos>
+            <size>1 0.10</size>
+            <path>./space.webp</path>
+            <color>00000000</color>
+            <colorEnd>000000</colorEnd>
+            <gradientType>vertical</gradientType>
+            <zIndex>2</zIndex>
+        </image>
+
+        <image name="yearbadge">
+            <pos>0.1665 0.225</pos>
+            <origin>0 0</origin>
+            <maxSize>0.0645 0.18</maxSize>
+            <path>./assets/badges/plain.svg</path>
+            <color>787878DD</color>
+            <zIndex>30</zIndex>
+        </image>
+        <image name="ratebadge">
+            <pos>0.1005 0.225</pos>
+            <origin>0 0</origin>
+            <maxSize>0.0645 0.18</maxSize>
+            <path>./assets/badges/plain.svg</path>
+            <color>787878DD</color>
+            <zIndex>30</zIndex>
+        </image>
+        <image name="playerbadge">
+            <pos>0.035 0.225</pos>
+            <origin>0 0</origin>
+            <maxSize>0.0645 0.18</maxSize>
+            <path>./assets/badges/plain.svg</path>
+            <color>787878DD</color>
+            <zIndex>30</zIndex>
+        </image>
+        <badges name="all">
+            <pos>0.232 0.225</pos>
+            <size>0.325 .18</size>
+            <direction>row</direction>
+            <lines>1</lines>
+            <itemsPerLine>5</itemsPerLine>
+            <itemMargin>0.001 0.001</itemMargin>
+            <slots>completed, favorite,controller,manual</slots>
+            <controllerPos>0.5 0.575</controllerPos>
+            <controllerSize>0.85</controllerSize>
+            <folderLinkSize>0.85 0.9</folderLinkSize>
+            <folderLinkPos>0.47 0.48</folderLinkPos>
+            <folderLinkIconColor>00000055</folderLinkIconColor>
+            <badgeIconColor>787878DD</badgeIconColor>
+            <horizontalAlignment>left</horizontalAlignment>
+            <customBadgeIcon badge="manual">./assets/badges/manual.svg</customBadgeIcon>
+            <customBadgeIcon badge="kidgame">./assets/badges/kid.svg</customBadgeIcon>
+            <customBadgeIcon badge="collection">./assets/badges/collection.svg</customBadgeIcon>
+            <customBadgeIcon badge="altemulator">./assets/badges/alt.svg</customBadgeIcon>
+            <customBadgeIcon badge="favorite">./assets/badges/fave.svg</customBadgeIcon>
+            <customBadgeIcon badge="completed">./assets/badges/complete.svg</customBadgeIcon>
+            <customBadgeIcon badge="controller">./assets/badges/control.svg</customBadgeIcon>
+        </badges>
+        <text name="player">
+            <text>PLAYERS</text>
+            <pos>0.06725 0.23</pos>
+            <size>0.064 0.0225</size>
+            <origin>0.5 0</origin>
+            <fontPath>${badgeFont}</fontPath>
+            <fontSize>0.0225</fontSize>
+            <color>000000</color>
+            <horizontalAlignment>center</horizontalAlignment>
+        </text>
+        <text name="playercount">
+            <metadata>players</metadata>
+            <defaultValue>1</defaultValue>
+            <pos>0.06725 0.255</pos>
+            <size>0.056 0.09</size>
+            <origin>0.5 0</origin>
+            <fontPath>${badgeFont}</fontPath>
+            <fontSize>0.04</fontSize>
+            <color>787878DD</color>
+            <horizontalAlignment>center</horizontalAlignment>
+        </text>
+        <text name="genre">
+            <text>GENRE</text>
+            <pos>0.13275 0.23</pos>
+            <size>0.064 0.0225</size>
+            <origin>0.5 0</origin>
+            <fontPath>${badgeFont}</fontPath>
+            <fontSize>0.0225</fontSize>
+            <color>000000</color>
+            <horizontalAlignment>center</horizontalAlignment>
+        </text>
+        <text name="genretype">
+            <metadata>genre</metadata>
+            <pos>0.13275 0.255</pos>
+            <size>0.056 0.09</size>
+            <origin>0.5 0</origin>
+            <fontPath>${badgeFont}</fontPath>
+            <fontSize>0.02</fontSize>
+            <color>787878DD</color>
+            <horizontalAlignment>center</horizontalAlignment>
+        </text>
+        
+        <text name="release">
+            <text>RELEASED</text>
+            <pos>0.19825 0.23</pos>
+            <size>0.064 0.0225</size>
+            <origin>0.5 0</origin>
+            <fontPath>${badgeFont}</fontPath>
+            <fontSize>0.0225</fontSize>
+            <color>000000</color>
+            <horizontalAlignment>center</horizontalAlignment>
+        </text>
+        <datetime name="year">
+            <metadata>releasedate</metadata>
+            <format>%Y</format>
+            <pos>0.19825 0.255</pos>
+            <size>0.056 0.09</size>
+            <origin>0.5 0</origin>
+            <fontPath>${badgeFont}</fontPath>
+            <fontSize>0.04</fontSize>
+            <color>787878DD</color>
+            <horizontalAlignment>center</horizontalAlignment>
+        </datetime>
+        </view>
+    </variant>
+
+    <variant name="text">
+        <view name="gamelist">
+            <textlist name="Textlist">
+                <pos>0.035 0.225</pos>
+                <size>0.4 0.7</size>
+                <origin>0 0</origin>
+                <selectorWidth>0.4</selectorWidth>
+                <selectorHorizontalOffset>-0</selectorHorizontalOffset>
+                <selectorColor>FFFFFF</selectorColor>
+                <primaryColor>787878</primaryColor>
+                <secondaryColor>787878</secondaryColor>
+                <selectedColor>000000</selectedColor>
+                <fontPath>${secondaryFont}</fontPath>
+                <fontSize>${sysdescsize}</fontSize>
+                <systemNameSuffix>false</systemNameSuffix>
+                <horizontalAlignment>left</horizontalAlignment>
+                <horizontalMargin>0.005</horizontalMargin>
+                <letterCase>none</letterCase>
+                <lineSpacing>1.498</lineSpacing>
+            </textlist>
+            <text name="sysname">
+                <pos>0.035 0.125</pos>
+                <origin>0 0.5</origin>
+                <size>0.475 0.2</size>
+                <text>${systemName}</text>
+                <fontPath>${mainFont}</fontPath>
+                <fontSize>${gamenamesize}</fontSize>
+                <lineSpacing>0.9</lineSpacing>
+                <systemNameSuffix>false</systemNameSuffix>
+                <verticalAlignment>center</verticalAlignment>
+                <horizontalAlignment>left</horizontalAlignment>
+                <color>FFFFFF</color>
+            </text>
+            
+            <video name="background2">
+                <pos>0.35 0</pos>
+                <cropSize>0.65 .8</cropSize>
+                <imageType>screenshot</imageType>
+                <zIndex>1</zIndex>
+            </video>
+            <image name="background3">
+                <pos>0.45 -0.2</pos>
+                <size>0.45 1.5</size>
+                <rotation>20</rotation>
+                <path>./space.webp</path>
+                <color>000000</color>
+                <colorEnd>00000000</colorEnd>
+                <zIndex>2</zIndex>
+            </image>
+            <image name="background4">
+                <pos>-0.1 -0.2</pos>
+                <rotation>20</rotation>
+                <size>0.525 1.5</size>
+                <path>./space.webp</path>
+                <color>000000</color>
+                <zIndex>2</zIndex>
+            </image>
+            <image name="background5">
+                <pos>0 0.7</pos>
+                <size>1 0.10</size>
+                <path>./space.webp</path>
+                <color>00000000</color>
+                <colorEnd>000000</colorEnd>
+                <gradientType>vertical</gradientType>
+                <zIndex>2</zIndex>
+            </image>
+            <image name="yearbadge">
+                <pos>0.715 0.815</pos>
+                <origin>1 0</origin>
+                <maxSize>0.0645 0.18</maxSize>
+                <path>./assets/badges/plain.svg</path>
+                <color>787878DD</color>
+                <zIndex>30</zIndex>
+            </image>
+            <image name="ratebadge">
+                <pos>0.6485 0.815</pos>
+                <origin>1 0</origin>
+                <maxSize>0.0645 0.18</maxSize>
+                <path>./assets/badges/plain.svg</path>
+                <color>787878DD</color>
+                <zIndex>30</zIndex>
+            </image>
+            <image name="playerbadge">
+                <pos>0.583 0.815</pos>
+                <origin>1 0</origin>
+                <maxSize>0.0645 0.18</maxSize>
+                <path>./assets/badges/plain.svg</path>
+                <color>787878DD</color>
+                <zIndex>30</zIndex>
+            </image>
+            <badges name="all">
+                <pos>0.716 0.815</pos>
+                <size>0.325 .18</size>
+                <direction>row</direction>
+                <lines>1</lines>
+                <itemsPerLine>5</itemsPerLine>
+                <itemMargin>0.001 0.001</itemMargin>
+                <slots>completed, favorite,controller,manual</slots>
+                <controllerPos>0.5 0.575</controllerPos>
+                <controllerSize>0.85</controllerSize>
+                <folderLinkSize>0.85 0.9</folderLinkSize>
+                <folderLinkPos>0.47 0.48</folderLinkPos>
+                <folderLinkIconColor>00000055</folderLinkIconColor>
+                <badgeIconColor>787878DD</badgeIconColor>
+                <horizontalAlignment>left</horizontalAlignment>
+                <customBadgeIcon badge="manual">./assets/badges/manual.svg</customBadgeIcon>
+                <customBadgeIcon badge="kidgame">./assets/badges/kid.svg</customBadgeIcon>
+                <customBadgeIcon badge="collection">./assets/badges/collection.svg</customBadgeIcon>
+                <customBadgeIcon badge="altemulator">./assets/badges/alt.svg</customBadgeIcon>
+                <customBadgeIcon badge="favorite">./assets/badges/fave.svg</customBadgeIcon>
+                <customBadgeIcon badge="completed">./assets/badges/complete.svg</customBadgeIcon>
+                <customBadgeIcon badge="controller">./assets/badges/control.svg</customBadgeIcon>
+            </badges>
+            <text name="player">
+                <text>PLAYERS</text>
+                <pos>0.5505 0.82</pos>
+                <size>0.064 0.0225</size>
+                <origin>0.5 0</origin>
+                <fontPath>${badgeFont}</fontPath>
+                <fontSize>0.0225</fontSize>
+                <color>000000</color>
+                <horizontalAlignment>center</horizontalAlignment>
+            </text>
+            <text name="playercount">
+                <metadata>players</metadata>
+                <defaultValue>1</defaultValue>
+                <pos>0.5505 0.845</pos>
+                <size>0.056 0.09</size>
+                <origin>0.5 0</origin>
+                <fontPath>${badgeFont}</fontPath>
+                <fontSize>0.04</fontSize>
+                <color>787878DD</color>
+                <horizontalAlignment>center</horizontalAlignment>
+            </text>
+            <text name="genre">
+                <text>GENRE</text>
+                <pos>0.61655 0.82</pos>
+                <size>0.064 0.0225</size>
+                <origin>0.5 0</origin>
+                <fontPath>${badgeFont}</fontPath>
+                <fontSize>0.0225</fontSize>
+                <color>000000</color>
+                <horizontalAlignment>center</horizontalAlignment>
+            </text>
+            <text name="genretype">
+                <metadata>genre</metadata>
+                <pos>0.6165 0.845</pos>
+                <size>0.056 0.09</size>
+                <origin>0.5 0</origin>
+                <fontPath>${badgeFont}</fontPath>
+                <fontSize>0.02</fontSize>
+                <color>787878DD</color>
+                <horizontalAlignment>center</horizontalAlignment>
+            </text>
+            
+            <text name="release">
+                <text>RELEASED</text>
+                <pos>0.6825 0.82</pos>
+                <size>0.064 0.0225</size>
+                <origin>0.5 0</origin>
+                <fontPath>${badgeFont}</fontPath>
+                <fontSize>0.0225</fontSize>
+                <color>000000</color>
+                <horizontalAlignment>center</horizontalAlignment>
+            </text>
+            <datetime name="year">
+                <metadata>releasedate</metadata>
+                <format>%Y</format>
+                <pos>0.6825 0.845</pos>
+                <size>0.056 0.09</size>
+                <origin>0.5 0</origin>
+                <fontPath>${badgeFont}</fontPath>
+                <fontSize>0.04</fontSize>
+                <color>787878DD</color>
+                <horizontalAlignment>center</horizontalAlignment>
+            </datetime>
+        </view>
+    </variant>
+</theme>
