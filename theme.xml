@@ -156,18 +156,20 @@
             <zIndex>29</zIndex>
         </grid>
         <text name="sysname">
-            <pos>0.52 0.075</pos>
-            <size>0.46 0.05</size>
+            <pos>0.52 0.03</pos>
+            <size>0.46 0.09</size>
             <text>${systemName}</text>
+            <verticalAlignment>bottom</verticalAlignment>
+            <lineSpacing>0.9</lineSpacing>
             <fontPath>${secondaryFont}</fontPath>
             <fontSize>${gamesyssize}</fontSize>
             <color>787878</color>
         </text>
         <text name="gamename">
-            <pos>0.52 0.14</pos>
+            <pos>0.52 0.12</pos>
             <size>0.46 0.2</size>
             <metadata>name</metadata>
-            <verticalAlignment>top</verticalAlignment>
+            <verticalAlignment>middle</verticalAlignment>
             <fontPath>${mainFont}</fontPath>
             <fontSize>${gamenamesize}</fontSize>
             <lineSpacing>0.9</lineSpacing>
