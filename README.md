@@ -1,6 +1,6 @@
 # Slick (remixed) for EmulationStation Desktop Edition
 
-
+![system](sys.webp)
 
 The following options are included:
 
