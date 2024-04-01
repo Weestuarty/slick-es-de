@@ -1,0 +1,6 @@
+## Credits
+
+Based on Pegasus theme Slick by Buzz (https://github.com/buzz/pegasus-theme-slick)
+
+Based on [Flixnet theme](https://github.com/mmatyas/pegasus-theme-flixnet) by
+[mmatyas](https://github.com/mmatyas).
