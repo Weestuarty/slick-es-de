@@ -103,6 +103,7 @@
             <pos>0.2 0</pos>
             <size>1 1</size>
             <path>./assets/backgrounds/${system.theme}.png</path>
+            <default>./assets/backgrounds/default.png</default>
             <zIndex>1</zIndex>
         </image>
         <image name="background3">
@@ -145,10 +146,11 @@
             <selectorRelativeScale>1.</selectorRelativeScale>
             <text>${systemName}</text>
             <textColor>FFFFFF</textColor>
+            <backgroundColor>000000</backgroundColor>
             <scaleInwards>true</scaleInwards>
             <imageFit>cover</imageFit>
             <fractionalRows>true</fractionalRows>
-            <textSelectedColor>FFFFFF</textSelectedColor>
+            <textSelectedColor>FF0000</textSelectedColor>
             <textRelativeScale>0.925</textRelativeScale>
             <fontSize>0.018</fontSize>
             <letterCase>uppercase</letterCase>
@@ -169,7 +171,7 @@
             <pos>0.52 0.12</pos>
             <size>0.46 0.2</size>
             <metadata>name</metadata>
-            <verticalAlignment>middle</verticalAlignment>
+            <verticalAlignment>center</verticalAlignment>
             <fontPath>${mainFont}</fontPath>
             <fontSize>${gamenamesize}</fontSize>
             <lineSpacing>0.9</lineSpacing>
@@ -287,6 +289,7 @@
         </text>
         <text name="genretype">
             <metadata>genre</metadata>
+            <defaultValue>:space:</defaultValue>
             <pos>0.6175 0.355</pos>
             <size>0.056 0.09</size>
             <origin>0.5 0</origin>
@@ -308,6 +311,7 @@
         </text>
         <datetime name="year">
             <metadata>releasedate</metadata>
+            <defaultValue>:space:</defaultValue>
             <format>%Y</format>
             <pos>0.6825 0.355</pos>
             <size>0.056 0.09</size>
@@ -341,7 +345,7 @@
             <zIndex>30</zIndex>
         </carousel>
         <text name="sysname">
-            <pos>0.035 0.125</pos>
+            <pos>0.035 0.14</pos>
             <origin>0 0.5</origin>
             <size>0.475 0.2</size>
             <metadata>name</metadata>
@@ -352,12 +356,22 @@
             <verticalAlignment>center</verticalAlignment>
             <horizontalAlignment>left</horizontalAlignment>
             <color>FFFFFF</color>
+        </text> 
+        <text name="sysname2">
+            <pos>0.035 0.02</pos>
+            <size>0.6 0.04</size>
+            <text>${systemName}</text>
+            <verticalAlignment>bottom</verticalAlignment>
+            <lineSpacing>0.9</lineSpacing>
+            <fontPath>${secondaryFont}</fontPath>
+            <fontSize>${gamesyssize}</fontSize>
+            <color>787878</color>
         </text>
        
         <text name="sysdesc">
-            <pos>0.035 0.385</pos>
+            <pos>0.035 0.37</pos>
             <origin>0 0</origin>
-            <size>0.325 0.43</size>
+            <size>0.325 0.4</size>
             <metadata>description</metadata>
             <fontPath>${secondaryFont}</fontPath>
             <fontSize>${sysdescsize}</fontSize>
@@ -481,6 +495,7 @@
         </text>
         <text name="genretype">
             <metadata>genre</metadata>
+            <defaultValue>:space:</defaultValue>
             <pos>0.13275 0.255</pos>
             <size>0.056 0.09</size>
             <origin>0.5 0</origin>
@@ -502,6 +517,7 @@
         </text>
         <datetime name="year">
             <metadata>releasedate</metadata>
+            <defaultValue>:space:</defaultValue>
             <format>%Y</format>
             <pos>0.19825 0.255</pos>
             <size>0.056 0.09</size>
@@ -660,6 +676,7 @@
             </text>
             <text name="genretype">
                 <metadata>genre</metadata>
+                <defaultValue>:space:</defaultValue>
                 <pos>0.6165 0.845</pos>
                 <size>0.056 0.09</size>
                 <origin>0.5 0</origin>
@@ -681,6 +698,7 @@
             </text>
             <datetime name="year">
                 <metadata>releasedate</metadata>
+                <defaultValue>:space:</defaultValue>
                 <format>%Y</format>
                 <pos>0.6825 0.845</pos>
                 <size>0.056 0.09</size>
