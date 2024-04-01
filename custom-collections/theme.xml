@@ -1,0 +1,15 @@
+<theme>
+    <include>./../theme.xml</include>
+
+    <variant name="all">
+        <view name="gamelist">
+            <text name="sysname">
+                <metadata>systemFullname</metadata>
+                <defaultValue>Your Collections</defaultValue>
+            </text>
+            
+        </view>
+    </variant>
+
+   
+</theme>
