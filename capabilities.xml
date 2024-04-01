@@ -9,6 +9,11 @@
 
     <fontSize>medium</fontSize>
     <fontSize>large</fontSize>
+    <suppressTransitionProfiles>
+        <entry>builtin-fade</entry>
+    </suppressTransitionProfiles>
+
+   
 
     <variant name="grid">
         <label>Grid Gamelist</label>
