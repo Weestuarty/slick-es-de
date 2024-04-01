@@ -83,7 +83,14 @@
                     <size>0.35 0.38</size>
 
                 </text>
-                
+                <image name="background4">
+                    <pos>-0.09 -0.275</pos>
+                    <rotation>20</rotation>
+                    <size>0.525 1.5</size>
+                    <path>./space.webp</path>
+                    <color>000000</color>
+                    <zIndex>2</zIndex>
+                </image>
 
                 <text name="player">
                     <pos>0.06725 0.2325</pos>
