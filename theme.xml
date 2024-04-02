@@ -154,7 +154,7 @@
             <fractionalRows>true</fractionalRows>
             <textSelectedColor>FF0000</textSelectedColor>
             <textRelativeScale>0.925</textRelativeScale>
-            <fontSize>0.018</fontSize>
+            <fontSize>${gridfont}</fontSize>
             <letterCase>uppercase</letterCase>
             <lineSpacing>0.8</lineSpacing>
             <zIndex>29</zIndex>

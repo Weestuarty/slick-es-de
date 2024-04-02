@@ -11,6 +11,7 @@
         <fontSize name="medium">
             <variables>
                 <sysnamesize>0.1</sysnamesize>
+                <gridfont>0.018</gridfont>
                 <sysdescsize>0.0325</sysdescsize>
                 <syshelpsize>0.03</syshelpsize>
                 <gamesyssize>0.05</gamesyssize>
@@ -24,6 +25,7 @@
         <fontSize name="large">
             <variables>
                 <sysnamesize>0.1</sysnamesize>
+                <gridfont>0.036</gridfont>
                 <sysdescsize>0.055</sysdescsize>
                 <syshelpsize>0.04</syshelpsize>
                 <gamesyssize>0.05</gamesyssize>
