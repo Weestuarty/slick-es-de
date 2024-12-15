@@ -2,6 +2,7 @@
     <include>./system/metadata/_default.xml</include>
     <include>./system/custom/metadata/${system.theme}.xml</include>
     <include>./system/metadata/${system.theme}.xml</include>
+    <include>./system/coversize/systeminfo/${system.theme}.xml</include>
     <include>./font.xml</include>
     
     <aspectRatio name="4:3">
@@ -129,14 +130,15 @@
     </variant>
 
     <variant name="grid">
-        
-    <include>./system/coversize/${systemCoverSize}.xml</include>
+        <include>./system/coversize/${systemCoverSize}.xml</include>
+
     <view name="gamelist">
         <grid name="grid">
             <origin>0 0</origin>
             <pos>0 0.001</pos>
             <size>0.5 0.95</size>
             <itemSpacing>0.0 0.0</itemSpacing>
+            <itemSize>${gridItemSize}</itemSize>
             <imageType>cover</imageType>
             <imageRelativeScale>1</imageRelativeScale>
             <itemScale>1.2</itemScale>

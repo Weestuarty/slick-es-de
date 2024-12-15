@@ -9,10 +9,28 @@
 
     <fontSize>medium</fontSize>
     <fontSize>large</fontSize>
+    <fontSize>medium</fontSize>
+    <fontSize>x-large</fontSize>
     <suppressTransitionProfiles>
         <entry>builtin-fade</entry>
     </suppressTransitionProfiles>
 
+    <language>en_US</language>
+   <language>en_GB</language>
+   <language>ca_ES</language>
+   <language>de_DE</language>
+   <language>es_ES</language>
+   <language>fr_FR</language>
+   <language>it_IT</language>
+   <language>nl_NL</language>
+   <language>pl_PL</language>
+   <language>pt_BR</language>
+   <language>ro_RO</language>
+   <language>ru_RU</language>
+   <language>sv_SE</language>
+   <language>ja_JP</language>
+   <language>ko_KR</language>
+   <language>zh_CN</language>
    
 
     <variant name="grid">
